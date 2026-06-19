@@ -14,10 +14,10 @@ async function UniqueContent() {
   return <p>Request ID: {uuid}</p>;
 }
 
-export default function Page() {
+export default async function Page() {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
-      <UniqueContent />
-    </Suspense>
+    // <Suspense fallback={<p>Loading...</p>}>
+    <UniqueContent />
+    // </Suspense>
   );
 }
